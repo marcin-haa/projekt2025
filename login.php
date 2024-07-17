@@ -13,7 +13,9 @@ $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
 if (isset($credentials[$username]) && $credentials[$username] === $password) {
-    echo 'Zalogowano pomyślnie!';
+    // Przekierowanie po pomyślnym zalogowaniu
+    header('Location: https://marcin-haa.github.io/new.php');
+    exit();
 } else {
     echo 'Nieprawidłowa nazwa użytkownika lub hasło.';
 }
