@@ -1,6 +1,4 @@
 <?php
-// Plik login.php
-
 // Wczytanie użytkowników i haseł z pliku tekstowego
 $users = file('users.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $credentials = [];
